@@ -1,31 +1,30 @@
 #!/usr/bin/env python
 
-import requests, random
+import requests
 from multiprocessing import Pool
+from typing import List
 
+urls: List[str] = []
 
-urls = []
-
-attackPatterns_ = [
-    ('"><script>alert(\'XSS\');</script>', '"><script>alert(\'XSS\');</script>'),
-    ('--><script>alert(\'XSS\');</script><!--', '--><script>alert(\'XSS\');</script><!--'),
-    ('\'><script>alert(\'XSS\');</script><!--', '\'><script>alert(\'XSS\');</script><!--'),
-    ('\'\';!--"<AEgHKsikgaE>=&{()}', '<AEgHKsikgaE>'),
-    ('<img src=0 onerror=alert(1)>', '<img src=0 onerror=alert(1)>'),
-    ('--><script>alert(\'XSS\');</script>', '--><script>alert(\'XSS\');</script>')
-]
+# attackPatterns_ = [
+#     ('"><script>alert(\'XSS\');</script>', '"><script>alert(\'XSS\');</script>'),
+#     ('--><script>alert(\'XSS\');</script><!--', '--><script>alert(\'XSS\');</script><!--'),
+#     ('\'><script>alert(\'XSS\');</script><!--', '\'><script>alert(\'XSS\');</script><!--'),
+#     ('\'\';!--"<AEgHKsikgaE>=&{()}', '<AEgHKsikgaE>'),
+#     ('<img src=0 onerror=alert(1)>', '<img src=0 onerror=alert(1)>'),
+#     ('--><script>alert(\'XSS\');</script>', '--><script>alert(\'XSS\');</script>')
+# ]
 
 attackPatterns = [
-    ('\'><bafbcbeeecf>', '<bafbcbeeecf>'),
-    ('\"><bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('\'><bafbcbeeecf>', '\'\'><bafbcbeeecf>'),
+    ('\"><bafbcbeeecf>', '\"\"><bafbcbeeecf>'),
     ('--><bafbcbeeecf>', '<bafbcbeeecf>'),
     ('><bafbcbeeecf>', '<bafbcbeeecf>'),
     ('<bafbcbeeecf>', '<bafbcbeeecf>'),
     (';<bafbcbeeecf>', '<bafbcbeeecf>'),
-    ('\'\'><bafbcbeeecf>', '<bafbcbeeecf>'),
     ('!--<bafbcbeeecf>', '<bafbcbeeecf>'),
-    ('"<bafbcbeeecf>', '<bafbcbeeecf>'),
-    ('\'<bafbcbeeecf>', '<bafbcbeeecf>'),
+    ('"<bafbcbeeecf>', '""<bafbcbeeecf>'),
+    ('\'<bafbcbeeecf>', '\'\'<bafbcbeeecf>'),
     (';><bafbcbeeecf>', '<bafbcbeeecf>'),
 ]
 
@@ -34,9 +33,6 @@ class Url:
 
     def parseParameters(self, url):
         params = {}
-        protocol = ''
-        domain = ''
-        path = ''
 
         if '?' in url:
             url = url[url.find('?') + 1:]
@@ -144,11 +140,14 @@ def attack(url):
 def main():
     res = []
 
-    with open('urls.txt', 'r', encoding="utf-8", errors="surrogateescape") as infile:
-        urls = [u.rstrip() for u in infile.readlines()[5000:6000]]
+    with open('urls.txt', 'r', encoding="utf-8", errors="surrogateescape") as f:
+        urls = [u.rstrip() for u in f.readlines()[30]]
 
-    with Pool(processes=100) as pool:
-        res = pool.map(attack, [Url(url) for url in urls])
+    #with Pool(processes=10) as pool:
+        #res = pool.map(attack, [Url(url) for url in urls])
+
+    for u in urls:
+        res.append(attack(Url(u)))
 
     buf = ''
     for r in res:
